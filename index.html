@@ -132,7 +132,7 @@
     <h2 class="text-center mt-0">Projects</h2>
     <div class="container-fluid p-0">
       <div class="row no-gutters">
-        <div class="col-lg-6 col-sm-6 project-card">
+        <div class="col-lg-6 col-sm-12 project-card">
           <h4>Cryptoquotes</h4>
           <a class="portfolio-box" data-toggle="modal" href="#project1-modal">
             <img class="img-fluid" src="https://i.imgur.com/AeMEyl4.png" alt="">
@@ -183,44 +183,159 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-6 col-sm-6">
-          <a class="portfolio-box" href="img/portfolio/fullsize/2.jpg">
-            <img class="img-fluid" src="img/portfolio/thumbnails/2.jpg" alt="">
+        <div class="col-lg-6 col-sm-12 project-card">
+          <h4>Subidos</h4>
+          <a class="portfolio-box" data-toggle="modal" href="#project2-modal">
+            <img class="img-fluid" src="https://i.imgur.com/fTBIJJV.png" alt="">
             <div class="portfolio-box-caption">
               <div class="project-category text-white-50">
                 Project 2
               </div>
               <div class="project-name">
-                Project Name
+                Subidos
               </div>
             </div>
           </a>
         </div>
-        <div class="col-lg-6 col-sm-6">
-          <a class="portfolio-box" href="img/portfolio/fullsize/3.jpg">
-            <img class="img-fluid" src="img/portfolio/thumbnails/3.jpg" alt="">
+        <div class="modal" tabindex="-1" role="dialog" id="project2-modal">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Subidos</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <img class="img-fluid" src="https://i.imgur.com/fTBIJJV.png" alt="">
+                <p>Subidos is a webapp to upload your photos and browse photos from other users. Users can upload images, browse both their own images and those shared by other users, and edit or delete images that they own.</p>
+                <br />
+                <h5>Technologies Used</h5>
+                <ul>
+                  <li>Javascript: Frontend and backend</li>
+                  <li>Express: Backend RESTful API</li>
+                  <li>MongoDB: Database</li>
+                  <li>Mongoose: Schema and ownership for database</li>
+                  <li>Amazon S3: Persistent storage for images</li>
+                  <li>Handlebars: View rendering</li>
+                  <li>jQuery: Event handling and DOM manipulation</li>
+                  <li>AJAX: API calls for user authentication as well as CRUDing photos</li>
+                  <li>Heroku: API deployment/hosting</li>
+                  <li>Grunt: Frontend deployment to Github pages</li>
+                  <li>GitHub: Version control</li>
+                </ul>
+              </div>
+              <div class="modal-footer">
+                <a href="https://po-ta-toes.github.io/subidos-client/" target="_blank">
+                  <button type="button" class="btn btn-primary">Deployed Site</button>
+                </a>
+                <a href="https://github.com/Po-Ta-Toes/subidos-client" target="_blank">
+                  <button type="button" class="btn btn-primary">Client Repo</button>
+                </a>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-sm-12 project-card">
+          <h4>Character Sheet Manager</h4>
+          <a class="portfolio-box" data-toggle="modal" href="#project3-modal">
+            <img class="img-fluid" src="https://i.imgur.com/hXcPKvO.png" alt="">
             <div class="portfolio-box-caption">
               <div class="project-category text-white-50">
                 Project 3
               </div>
               <div class="project-name">
-                Project Name
+                Character Sheet Manager
               </div>
             </div>
           </a>
         </div>
-        <div class="col-lg-6 col-sm-6">
-          <a class="portfolio-box" href="img/portfolio/fullsize/4.jpg">
-            <img class="img-fluid" src="img/portfolio/thumbnails/4.jpg" alt="">
+        <div class="modal" tabindex="-1" role="dialog" id="project3-modal">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Character Sheet Manager</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <img class="img-fluid" src="https://i.imgur.com/hXcPKvO.png" alt="">
+                <p>Character Sheet Manager is web application with which users can create, edit, and update character sheets for the Fate Core tabletop roleplaying system, whose rulebook is available online via a pay-what-you-like system.</p>
+                <br />
+                <h5>Technologies Used</h5>
+                <ul>
+                  <li>Ruby on Rails: Backend RESTful API</li>
+                  <li>Javascript: Frontend</li>
+                  <li>PostgreSQL: Database</li>
+                  <li>Handlebars: View rendering</li>
+                  <li>jQuery: Event handling and DOM manipulation</li>
+                  <li>AJAX: API calls for user authentication as well as CRUDing characters</li>
+                  <li>Heroku: API deployment/hosting</li>
+                  <li>Grunt: Frontend deployment to Github pages</li>
+                  <li>GitHub: Version control</li>
+                </ul>
+              </div>
+              <div class="modal-footer">
+                <a href="https://jakeseib.github.io/cryptoquotes-client/" target="_blank">
+                  <button type="button" class="btn btn-primary">Deployed Site</button>
+                </a>
+                <a href="https://github.com/JakeSeib/Character-Sheet-Manager-client" target="_blank">
+                  <button type="button" class="btn btn-primary">Client Repo</button>
+                </a>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-sm-12 project-card">
+          <h4>Tic-Tac-Toe</h4>
+          <a class="portfolio-box" data-toggle="modal" href="#project4-modal">
+            <img class="img-fluid" src="https://i.imgur.com/ukDhEok.png" alt="">
             <div class="portfolio-box-caption">
               <div class="project-category text-white-50">
                 Project 4
               </div>
               <div class="project-name">
-                Project Name
+                Tic-Tac-Toe
               </div>
             </div>
           </a>
+        </div>
+        <div class="modal" tabindex="-1" role="dialog" id="project4-modal">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Tic-Tac-Toe</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <img class="img-fluid" src="https://i.imgur.com/ukDhEok.png" alt="">
+                <p>This is a SPA written in Javascript that allows the user to play multiple games of tic-tac-toe in the browser, using a third-party API to store historical game data.</p>
+                <br />
+                <h5>Technologies Used</h5>
+                <ul>
+                  <li>Javascript: Game engine</li>
+                  <li>Jquery: Event handling and UI updates</li>
+                  <li>AJAX: Api calls for user authentication as well as creating, accessing, and updating game data</li>
+                  <li>Grunt: Deployment</li>
+                  <li>GitHub: Version control</li>
+                </ul>
+              </div>
+              <div class="modal-footer">
+                <a href="https://jakeseib.github.io/tic-tac-toe-client/" target="_blank">
+                  <button type="button" class="btn btn-primary">Deployed Site</button>
+                </a>
+                <a href="https://github.com/JakeSeib/tic-tac-toe-client" target="_blank">
+                  <button type="button" class="btn btn-primary">Client Repo</button>
+                </a>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

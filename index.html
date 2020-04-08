@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Jacob Seib</title>
+  <title>Jacob Seib's Portfolio</title>
 
   <!-- Font Awesome Icons -->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -21,7 +21,7 @@
   <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
 
   <!-- Theme CSS - Includes Bootstrap -->
-  <link href="css/creative.min.css" rel="stylesheet">
+  <link href="css/creative.css" rel="stylesheet">
 
 </head>
 
@@ -30,7 +30,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">To top of page</a>
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Jacob Seib</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -58,12 +58,12 @@
     <div class="container h-100">
       <div class="row h-100 align-items-center justify-content-center text-center">
         <div class="col-lg-10 align-self-end">
-          <h1 class="text-uppercase text-white font-weight-bold">Splash page</h1>
+          <h1 class="text-uppercase text-white font-weight-bold">Jacob Seib</h1>
           <hr class="divider my-4">
         </div>
         <div class="col-lg-8 align-self-baseline">
-          <p class="text-white-75 font-weight-light mb-5">Basic info about me</p>
-          <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Resume</a>
+          <p class="text-white-75 font-weight-light mb-5">Full-stack Web Developer | Software Engineer</p>
+          <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Download Resume</a>
         </div>
       </div>
     </div>
@@ -76,8 +76,14 @@
         <div class="col-lg-8 text-center">
           <h2 class="text-white mt-0">About Me</h2>
           <hr class="divider light my-4">
-          <p class="text-white-50 mb-4">Detailed info about me</p>
-          <a class="btn btn-light btn-xl js-scroll-trigger" href="#services">Second button?</a>
+          <p class="text-white-50 mb-4">
+            My educational background and initial work experience was in math and physics, but I’d always had an interest in programming and had been on the lookout for an opportunity to develop that interest more seriously. A few years ago, I got that chance. Some long-time friends and I all found ourselves looking for new jobs and began seriously considering creating something of our own. We had the right mix of backgrounds, experience in the tech world, and most importantly, an idea for how to solve a pressing problem- helping grassroots organizers automate the tedious parts of their job.
+          </p>
+          <br />
+          <p class="text-white-50 mb-4">
+            As part of my work as co-founder of our company, OrganizeTogether, I learned many programming tools from scratch, and helped create several of our core features: a members database, a sign-in sheet attached to every event, and a suite of notifications. I found development work both invigorating and enjoyable and have now shifted full-time to software development.
+          </p>
+          <!-- <a class="btn btn-light btn-xl js-scroll-trigger" href="#services">Second button?</a> -->
         </div>
       </div>
     </div>
@@ -126,18 +132,56 @@
     <h2 class="text-center mt-0">Projects</h2>
     <div class="container-fluid p-0">
       <div class="row no-gutters">
-        <div class="col-lg-6 col-sm-6">
-          <a class="portfolio-box" href="img/portfolio/fullsize/1.jpg">
-            <img class="img-fluid" src="img/portfolio/thumbnails/1.jpg" alt="">
+        <div class="col-lg-6 col-sm-6 project-card">
+          <h4>Cryptoquotes</h4>
+          <a class="portfolio-box" data-toggle="modal" href="#project1-modal">
+            <img class="img-fluid" src="https://i.imgur.com/AeMEyl4.png" alt="">
             <div class="portfolio-box-caption">
               <div class="project-category text-white-50">
                 Project 1
               </div>
               <div class="project-name">
-                Project Name
+                Cryptoquotes
               </div>
             </div>
           </a>
+        </div>
+        <div class="modal" tabindex="-1" role="dialog" id="project1-modal">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Cryptoquotes</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <img class="img-fluid" src="https://i.imgur.com/AeMEyl4.png" alt="">
+                <p>Cryptoquotes is an application for making and solving cryptograms, short puzzles where the user tries to decode an encrypted text. In the case of the app, the text in question is a quote and its original author.</p>
+                <br />
+                <h5>Technologies Used</h5>
+                <ul>
+                  <li>Ruby on Rails: Backend RESTful API</li>
+                  <li>PostgreSQL: Database</li>
+                  <li>Javascript: Frontend</li>
+                  <li>React: View rendering, event handling, and DOM manipulation</li>
+                  <li>axios: API calls for user authentication as well as CRUDing quotes/solved_quotes</li>
+                  <li>Heroku: API deployment/hosting</li>
+                  <li>npm: Frontend deployment to Github pages</li>
+                  <li>GitHub: Version control</li>
+                </ul>
+              </div>
+              <div class="modal-footer">
+                <a href="https://jakeseib.github.io/cryptoquotes-client/" target="_blank">
+                  <button type="button" class="btn btn-primary">Deployed Site</button>
+                </a>
+                <a href="https://github.com/JakeSeib/cryptoquotes-client" target="_blank">
+                  <button type="button" class="btn btn-primary">Client Repo</button>
+                </a>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="col-lg-6 col-sm-6">
           <a class="portfolio-box" href="img/portfolio/fullsize/2.jpg">
